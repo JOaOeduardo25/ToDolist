@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3498db; /* Azul mais intenso */
+}
+
+.todo-app {
+    text-align: center;
+    background-color: #ecf0f1; /* Cinza claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: background-color 0.3s ease; /* Adiciona transição ao fundo */
+}
+
+h1 {
+    color: #2c3e50; /* Azul escuro */
+    font-size: 24px;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-right: 10px;
+    color: #34495e; /* Cor do texto do rótulo */
+}
+
+input {
+    padding: 10px; /* Aumentei o padding para melhorar a aparência */
+    font-size: 16px;
+    border: 1px solid #bdc3c7; /* Cinza mais escuro */
+    border-radius: 4px;
+    margin-bottom: 10px; /* Adiciona espaço abaixo do input */
+}
+
+button {
+    padding: 10px 20px; /* Aumentei o padding para melhorar a aparência */
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2ecc71; /* Verde */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Adiciona transição ao fundo do botão */
+}
+
+button:hover {
+    background-color: #27ae60; /* Verde mais escuro ao passar o mouse */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    background-color: #ecf0f1; /* Cinza claro */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Adiciona transição ao fundo da tarefa */
+    animation: fadeInOut 0.5s ease-in-out;
+}
+
+.delete-btn {
+    background-color: #e74c3c; /* Vermelho */
+    color: #fff;
+    padding: 8px 16px; /* Ajustei o padding para melhorar a aparência */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adiciona transição ao fundo do botão de exclusão */
+}
+
+.delete-btn:hover {
+    background-color: #c0392b; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Imagens de check e lixeira */
+.check-icon,
+.delete-icon {
+    width: 20px;
+    height: auto;
+    margin-top: 5px;
+    display: none; /* Adicione esta regra para esconder a imagem por padrão */
+}
+
+/* Mostrar as imagens quando necessário */
+.completed .check-icon,
+.deleting .delete-icon {
+    display: inline-block;
+}
+
+/* Estilo da mensagem de erro */
+.error-message {
+    color: #e74c3c; /* Vermelho */
+    margin-top: 5px;
+    display: none; /* Adicione esta regra para esconder a mensagem de erro por padrão */
+}
+

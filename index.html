@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>To-Do List App</title>
+</head>
+
+<body style="background-image: url('img/fundo.jpeg'); background-size: cover; background-position: center;">
+
+  <div class="todo-app">
+    <h1>Lista de Tarefa</h1>
+
+    <!-- Formulário para adicionar tarefas -->
+    <form id="taskForm">
+      <label for="taskInput">Nova Tarefa:</label>
+      <input type="text" id="taskInput" placeholder="Digite sua tarefa" required>
+      <button type="submit">Adicionar</button>
+      <div class="error-message">Por favor, adicione uma tarefa.</div>
+    </form>
+
+    <!-- Lista de Tarefas -->
+    <ul id="taskList">
+      <!-- Tarefas serão adicionadas dinamicamente aqui -->
+    </ul>
+
+    <!-- Botão de exclusão dentro da lista -->
+    <!-- Adicione este botão -->
+    <button class="delete-btn">
+      <img class="delete-icon" src="img/lixeira.jpeg" alt="Excluir">
+    </button>
+
+    <!-- Imagem de check dentro da lista -->
+    <!-- Adicione esta imagem -->
+    <img class="check-icon" src="img/check.jpeg" alt="Concluído">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
